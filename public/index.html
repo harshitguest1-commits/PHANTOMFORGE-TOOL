@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+  content="width=device-width, initial-scale=1.0">
+
+  <title>
+    PHANTOMFORGE
+  </title>
+
+  <link rel="stylesheet"
+  href="style.css">
+
+  <link rel="preconnect"
+  href="https://fonts.googleapis.com">
+
+  <link rel="preconnect"
+  href="https://fonts.gstatic.com"
+  crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
+  rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- CURSOR GLOW -->
+
+  <div id="cursorGlow"></div>
+
+  <!-- PARTICLES -->
+
+  <canvas id="particles"></canvas>
+
+  <!-- INTRO -->
+
+  <div id="intro">
+
+    <div class="intro-overlay"></div>
+
+    <div class="intro-content">
+
+      <p class="intro-topline">
+        AI CREATOR ENGINE
+      </p>
+
+      <h1 class="intro-logo">
+        PHANTOMFORGE
+      </h1>
+
+      <p class="intro-subtitle">
+        CINEMATIC DIGITAL EXPERIENCES
+      </p>
+
+      <div class="intro-loader">
+
+        <div class="loader-bar"></div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- APP -->
+
+  <div id="app">
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+      <div class="nav-logo">
+        PHANTOMFORGE
+      </div>
+
+      <div class="nav-links">
+
+        <a href="#hero">
+          HOME
+        </a>
+
+        <a href="#generator">
+          GENERATOR
+        </a>
+
+        <a href="#features">
+          FEATURES
+        </a>
+
+      </div>
+
+    </nav>
+
+    <!-- HERO -->
+
+    <section class="hero"
+    id="hero">
+
+      <div class="hero-bg-glow"></div>
+
+      <div class="hero-grid"></div>
+
+      <div class="hero-content">
+
+        <p class="hero-topline glow-text">
+          FUTURISTIC AI CREATOR SYSTEM
+        </p>
+
+        <h1 class="hero-title">
+
+          BUILD
+
+          <span class="gradient-text">
+            CINEMATIC
+          </span>
+
+          DIGITAL ENERGY
+
+        </h1>
+
+        <p class="hero-description">
+
+          Generate cinematic captions,
+          emotional quotes,
+          creator concepts,
+          and futuristic content experiences.
+
+        </p>
+<div class="hero-buttons">
+
+  <button
+  class="primary-btn"
+  id="enterBtn">
+
+    ENTER PHANTOMFORGE
+
+  </button>
+
+  <button
+  class="secondary-btn"
+  id="demoBtn">
+
+    WATCH DEMO
+
+  </button>
+
+</div>
+
+        <div class="hero-stats">
+
+          <div class="stat-card">
+
+            <h3>
+              10K+
+            </h3>
+
+            <p>
+              AI GENERATIONS
+            </p>
+
+          </div>
+
+          <div class="stat-card">
+
+            <h3>
+              REALTIME
+            </h3>
+
+            <p>
+              AI PROCESSING
+            </p>
+
+          </div>
+
+          <div class="stat-card">
+
+            <h3>
+              CINEMATIC
+            </h3>
+
+            <p>
+              CREATOR ENERGY
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- GENERATOR -->
+
+    <section class="generator"
+    id="generator">
+
+      <div class="section-header">
+
+        <p class="section-topline">
+          AI GENERATOR
+        </p>
+
+        <h2>
+          CREATE LIKE THE FUTURE
+        </h2>
+
+      </div>
+
+      <div class="generator-card">
+
+        <div class="mode-switcher">
+
+          <button class="mode-btn active"
+          data-mode="caption">
+            CAPTION
+          </button>
+
+          <button class="mode-btn"
+          data-mode="video">
+            VIDEO IDEA
+          </button>
+
+          <button class="mode-btn"
+          data-mode="quote">
+            QUOTE
+          </button>
+
+        </div>
+
+        <textarea
+        id="promptInput"
+        placeholder="Describe your cinematic vision..."></textarea>
+
+        <div class="prompt-tags">
+
+          <button class="prompt-tag">
+            Dark Lamborghini Night Edit
+          </button>
+
+          <button class="prompt-tag">
+            Anime Heartbreak Aesthetic
+          </button>
+
+          <button class="prompt-tag">
+            Neon Cyberpunk Energy
+          </button>
+
+        </div>
+
+        <div class="generator-actions">
+
+          <button id="generateBtn">
+            GENERATE
+          </button>
+
+          <button id="clearBtn">
+            CLEAR
+          </button>
+
+        </div>
+
+        <div id="captionResult">
+          Your AI result appears here...
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- FEATURES -->
+
+    <section class="features"
+    id="features">
+
+      <div class="section-header">
+
+        <p class="section-topline">
+          CORE SYSTEMS
+        </p>
+
+        <h2>
+          DESIGNED FOR MODERN CREATORS
+        </h2>
+
+      </div>
+
+      <div class="features-grid">
+
+        <div class="feature-card">
+
+          <div class="feature-icon">
+            ✦
+          </div>
+
+          <h3>
+            AI CAPTION MODE
+          </h3>
+
+          <p>
+            Generate luxury cinematic captions
+            for edits and reels.
+          </p>
+
+        </div>
+
+        <div class="feature-card">
+
+          <div class="feature-icon">
+            ✦
+          </div>
+
+          <h3>
+            VIDEO IDEA MODE
+          </h3>
+
+          <p>
+            Create immersive visual concepts
+            with cinematic pacing.
+          </p>
+
+        </div>
+
+        <div class="feature-card">
+
+          <div class="feature-icon">
+            ✦
+          </div>
+
+          <h3>
+            QUOTE MODE
+          </h3>
+
+          <p>
+            Generate emotional creator quotes
+            with modern aesthetic energy.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- SHOWCASE -->
+
+    <section class="showcase">
+
+      <div class="section-header">
+
+        <p class="section-topline">
+          EXPERIENCE
+        </p>
+
+        <h2>
+          FUTURE CREATOR TECHNOLOGY
+        </h2>
+
+      </div>
+
+      <div class="showcase-grid">
+
+        <div class="showcase-card large-card">
+
+          <div class="card-glow"></div>
+
+          <h3>
+            REALTIME AI GENERATION
+          </h3>
+
+          <p>
+            Experience cinematic content creation
+            powered by advanced AI systems.
+          </p>
+
+        </div>
+
+        <div class="showcase-card">
+
+          <h3>
+            FUTURISTIC DESIGN
+          </h3>
+
+        </div>
+
+        <div class="showcase-card">
+
+          <h3>
+            IMMERSIVE INTERACTIONS
+          </h3>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+      <h2>
+        PHANTOMFORGE
+      </h2>
+
+      <p>
+        THE FUTURE OF AI CREATOR EXPERIENCES
+      </p>
+
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
